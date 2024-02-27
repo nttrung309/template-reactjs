@@ -1,0 +1,104 @@
+.login-form-container{
+    width: 22%;
+
+    display: flex;
+    align-items: center;
+
+    .login-form{
+        width: 100%;
+        &__header{
+            color: $-Orange-500;
+            margin-bottom: 30px;
+    
+            @include login-form-header;
+        }
+        &__form{
+            .input-field{
+                margin-top: 24px;
+                .label{
+                    color: #4D4D4D;
+                    @include auth-form-label;
+                    margin-bottom: 8px;
+                }
+                .dropdown-icon{
+                    color: #F26D21;;
+                }
+                .ant-input{
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .infor-label{
+                font-family: "Open Sans";
+                font-size: 16px;
+                font-weight: 400;
+                color: red;
+
+                display: flex;
+                column-gap: 4px;
+                
+                margin-top: 8px;
+            }
+            .remember-forgot-password{
+                display: flex;
+                justify-content: space-between;
+    
+                .remember-password{
+                    display: flex;
+                    align-items: center;
+    
+                    .remember-pass-checkbox{
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #F26D21;
+                        accent-color: #F26D21;
+                        border-radius: 4px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        -ms-border-radius: 4px;
+                        -o-border-radius: 4px;
+                    }
+                    .remember-password-label{
+                        @include remember-password-label;
+                    }
+                }
+                .back-login-btn{
+                    &:visited{
+                        color: $-Orange-500;
+                    }
+                    display: flex;
+                    align-items: center;
+
+                    .forgot-password-label{
+                        
+                        color: $-Orange-500;
+                        @include forgot-password-label;
+
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+            .button.login{
+                @include button-login-style;
+                color: #FFFFFF;
+
+                width: 100%;
+                height: 48px;
+
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+
+                border: none;
+
+                background-color: $-Orange-500;
+
+                margin-top: 10px;
+            }
+        }
+    }
+}

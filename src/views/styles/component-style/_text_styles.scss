@@ -1,0 +1,50 @@
+@mixin login-form-header{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+@mixin forgot-password-form-header{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+@mixin auth-form-label{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@mixin remember-password-label{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@mixin forgot-password-label{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+@mixin back-login-style{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+@mixin btn-back-login-style{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+@mixin button-login-style{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+}
